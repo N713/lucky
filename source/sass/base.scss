@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  @include reset();
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.body {
+  font-family: $poppins;
+  color: $black;
+  background-color: $lightGreen;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  color: $orange;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}

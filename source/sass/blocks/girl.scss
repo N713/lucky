@@ -1,0 +1,40 @@
+.girl {
+    text-align: center;
+    width: 275px;
+    min-height: 557px;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        border-radius: 100%;
+        background-color: $green;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+@media(max-width: $point-2) {
+    .girl {
+        width: 200px;
+        display: flex;
+        align-items: flex-end;
+
+        &::before {
+            top: 200px;
+        }
+    }
+}
+
+@media(max-width: $point-3) {
+    .girl {
+        min-height: auto;
+
+        &::before {
+            top: 50px;
+        }
+    }
+}

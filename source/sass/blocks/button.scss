@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    background-color: $green;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    min-width: 115px;
+
+    &:hover,
+    &:focus {
+        background-color: $orange;
+    }
+}
+
+@media(max-width: $point-2) {
+    .button {
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        min-width: auto;
+    }
+}

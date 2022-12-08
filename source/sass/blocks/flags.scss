@@ -1,0 +1,44 @@
+.flags {
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-image: url('../img/icon-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: 35s linear 6s infinite rotate;
+
+    li {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        z-index: 1;
+    }
+
+    li:nth-of-type(1) {
+        animation: 1.2s linear 3s setPosition1 forwards;
+    }
+
+    li:nth-of-type(2) {
+        animation: 1.2s linear 3.4s setPosition2 forwards;
+    }
+
+    li:nth-of-type(3) {
+        animation: 1.2s linear 3.8s setPosition3 forwards;
+    }
+
+    li:nth-of-type(4) {
+        animation: 1.2s linear 4.2s setPosition4 forwards;
+    }
+
+    li:nth-of-type(5) {
+        animation: 1.2s linear 4.6s setPosition5 forwards;
+    }
+}
+
+@media(max-width: $point-3) {
+    .flags {
+        display: none;
+    }
+}

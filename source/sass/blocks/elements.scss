@@ -1,0 +1,41 @@
+.elements {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &__girl {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__flags {
+        margin-bottom: 165px;
+    }
+}
+
+@media(max-width: $point-1) {
+    .elements {
+        right: -140px;
+    }
+}
+
+@media(max-width: $point-2) {
+    .elements {
+        position: relative;
+        right: 0;
+
+        &__flags {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width: $point-3) {
+    .elements {
+        &__girl {
+            position: relative;
+        }
+    }
+}
