@@ -16,6 +16,18 @@ html, body {
   font-weight: 400;
 }
 
+h1, p {
+  a {
+    color: $orange;
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $green;
+    }
+  }
+}
+
 li {
   list-style: none;
 }
@@ -23,10 +35,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-span {
-  color: $orange;
 }
 
 img, picture, svg, video {
